@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = "Hello! I'd like to download the LetaGas app. Can you send me the Play Store link?";
-    const whatsappUrl = `https://wa.me/254704444810?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/254759735505?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -71,4 +71,4 @@ const WhatsAppButton: React.FC = () => {
   );
 };
 
-export default WhatsAppButton;
+export default WhatsAppButton; 
