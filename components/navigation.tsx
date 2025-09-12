@@ -79,13 +79,13 @@ export function Navigation() {
               >
                 Marketplace
               </Link>
-              <Link
+              {/* <Link
                 href="/faq"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
-              </Link>
+              </Link> */}
               <Link
                 href="/contact"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
