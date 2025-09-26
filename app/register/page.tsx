@@ -84,25 +84,25 @@ export default function RegisterPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-background via-background to-[#fc7618]/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
+            <div className="inline-flex items-center rounded-full bg-[#fc7618]/10 px-4 py-2 text-sm font-medium text-[#fc7618] mb-6">
               <UserPlus className="h-4 w-4 mr-2" />
               Join Our Network
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#20235b] mb-6 text-balance">
               {registrationType === "vendor" ? (
                 <>
-                  Become a <span className="text-primary">Certified Vendor</span>
+                  Become a <span className="text-[#fc7618]">Certified Vendor</span>
                 </>
               ) : (
                 <>
-                  Join as a <span className="text-primary">Customer</span>
+                  Join as a <span className="text-[#fc7618]">Customer</span>
                 </>
               )}
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty">
+            <p className="text-lg text-[#6b7280] mb-8 max-w-3xl mx-auto text-pretty">
               {registrationType === "vendor"
                 ? "Join Kenya's fastest-growing gas delivery network. Expand your customer base with our platform and grow your business."
                 : "Register as a customer to enjoy fast, reliable gas delivery services right to your doorstep."}
@@ -112,27 +112,27 @@ export default function RegisterPage() {
       </section>
 
       {/* Progress Steps */}
-      <section className="py-8 bg-muted/30">
+      <section className="py-8 bg-[#f8f9fa]/30">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {[1, 2, 3, 4].map((step) => (
               <div key={step} className="flex items-center">
                 <div
-                  className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${currentStep >= step ? "bg-primary border-primary text-primary-foreground" : "border-muted-foreground/30 text-muted-foreground"}`}
+                  className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${currentStep >= step ? "bg-[#fc7618] border-[#fc7618] text-white" : "border-[#6b7280]/30 text-[#6b7280]"}`}
                 >
                   {currentStep > step ? <CheckCircle className="h-5 w-5" /> : step}
                 </div>
                 {step < 4 && (
-                  <div className={`w-16 h-0.5 mx-2 ${currentStep > step ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                  <div className={`w-16 h-0.5 mx-2 ${currentStep > step ? "bg-[#fc7618]" : "bg-[#6b7280]/30"}`} />
                 )}
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-4 gap-4 mt-4 text-xs text-center text-muted-foreground">
-            <div className={currentStep === 1 ? "text-primary font-medium" : ""}>Type</div>
-            <div className={currentStep === 2 ? "text-primary font-medium" : ""}>Details</div>
-            <div className={currentStep === 3 ? "text-primary font-medium" : ""}>Documents</div>
-            <div className={currentStep === 4 ? "text-primary font-medium" : ""}>Review</div>
+          <div className="grid grid-cols-4 gap-4 mt-4 text-xs text-center text-[#6b7280]">
+            <div className={currentStep === 1 ? "text-[#fc7618] font-medium" : ""}>Type</div>
+            <div className={currentStep === 2 ? "text-[#fc7618] font-medium" : ""}>Details</div>
+            <div className={currentStep === 3 ? "text-[#fc7618] font-medium" : ""}>Documents</div>
+            <div className={currentStep === 4 ? "text-[#fc7618] font-medium" : ""}>Review</div>
           </div>
         </div>
       </section>
@@ -141,9 +141,9 @@ export default function RegisterPage() {
       <section className="py-16 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-0 shadow-lg rounded-2xl overflow-hidden">
-            <CardHeader className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-8">
+            <CardHeader className="bg-gradient-to-r from-[#fc7618] to-[#f57f20] text-white py-8">
               <CardTitle className="text-2xl text-center">Application Form</CardTitle>
-              <CardDescription className="text-center text-primary-foreground/90">
+              <CardDescription className="text-center text-white/90">
                 {currentStep === 1 && "Choose your registration type"}
                 {currentStep === 2 && "Provide your personal information"}
                 {currentStep === 3 && "Share your professional details"}
@@ -156,8 +156,8 @@ export default function RegisterPage() {
                 {currentStep === 1 && (
                   <div className="space-y-8">
                     <div className="text-center">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">I want to join as a:</h3>
-                      <p className="text-muted-foreground">Select your preferred role in our network</p>
+                      <h3 className="text-xl font-semibold text-[#20235b] mb-2">I want to join as a:</h3>
+                      <p className="text-[#6b7280]">Select your preferred role in our network</p>
                     </div>
 
                     <RadioGroup
@@ -166,30 +166,30 @@ export default function RegisterPage() {
                       className="grid grid-cols-1 md:grid-cols-2 gap-5"
                     >
                       <div
-                        className={`relative p-6 border-2 rounded-xl cursor-pointer transition-all ${registrationType === "vendor" ? "border-primary bg-primary/5" : "border-muted hover:border-primary/50"}`}
+                        className={`relative p-6 border-2 rounded-xl cursor-pointer transition-all ${registrationType === "vendor" ? "border-[#fc7618] bg-[#fc7618]/5" : "border-[#e5e7eb] hover:border-[#fc7618]/50"}`}
                       >
                         <RadioGroupItem value="vendor" id="vendor" className="sr-only" />
                         <Label htmlFor="vendor" className="flex flex-col items-center text-center cursor-pointer">
-                          <div className="bg-primary/10 p-4 rounded-full mb-4">
-                            <UserPlus className="h-8 w-8 text-primary" />
+                          <div className="bg-[#fc7618]/10 p-4 rounded-full mb-4">
+                            <UserPlus className="h-8 w-8 text-[#fc7618]" />
                           </div>
                           <span className="font-semibold text-lg mb-2">Gas Vendor</span>
-                          <p className="text-muted-foreground text-sm">
+                          <p className="text-[#6b7280] text-sm">
                             Supply and deliver gas to customers through our platform
                           </p>
                         </Label>
                       </div>
 
                       <div
-                        className={`relative p-6 border-2 rounded-xl cursor-pointer transition-all ${registrationType === "user" ? "border-primary bg-primary/5" : "border-muted hover:border-primary/50"}`}
+                        className={`relative p-6 border-2 rounded-xl cursor-pointer transition-all ${registrationType === "user" ? "border-[#fc7618] bg-[#fc7618]/5" : "border-[#e5e7eb] hover:border-[#fc7618]/50"}`}
                       >
                         <RadioGroupItem value="user" id="user" className="sr-only" />
                         <Label htmlFor="user" className="flex flex-col items-center text-center cursor-pointer">
-                          <div className="bg-primary/10 p-4 rounded-full mb-4">
-                            <User className="h-8 w-8 text-primary" />
+                          <div className="bg-[#fc7618]/10 p-4 rounded-full mb-4">
+                            <User className="h-8 w-8 text-[#fc7618]" />
                           </div>
                           <span className="font-semibold text-lg mb-2">Customer</span>
-                          <p className="text-muted-foreground text-sm">
+                          <p className="text-[#6b7280] text-sm">
                             Register to order gas delivery services to your location
                           </p>
                         </Label>
@@ -199,8 +199,8 @@ export default function RegisterPage() {
                     {registrationType === "vendor" && (
                       <div className="space-y-4">
                         <div className="text-center">
-                          <h4 className="text-lg font-medium text-foreground mb-2">Vendor Type</h4>
-                          <p className="text-muted-foreground text-sm">Choose your delivery capability</p>
+                          <h4 className="text-lg font-medium text-[#20235b] mb-2">Vendor Type</h4>
+                          <p className="text-[#6b7280] text-sm">Choose your delivery capability</p>
                         </div>
 
                         <RadioGroup
@@ -209,31 +209,31 @@ export default function RegisterPage() {
                           className="grid grid-cols-1 md:grid-cols-2 gap-4"
                         >
                           <div
-                            className={`relative p-4 border-2 rounded-lg cursor-pointer transition-all ${vendorType === "express" ? "border-primary bg-primary/5" : "border-muted hover:border-primary/50"}`}
+                            className={`relative p-4 border-2 rounded-lg cursor-pointer transition-all ${vendorType === "express" ? "border-[#fc7618] bg-[#fc7618]/5" : "border-[#e5e7eb] hover:border-[#fc7618]/50"}`}
                           >
                             <RadioGroupItem value="express" id="express" className="sr-only" />
                             <Label htmlFor="express" className="flex items-center cursor-pointer">
-                              <div className="bg-primary/10 p-2 rounded-full mr-3">
-                                <Bike className="h-5 w-5 text-primary" />
+                              <div className="bg-[#fc7618]/10 p-2 rounded-full mr-3">
+                                <Bike className="h-5 w-5 text-[#fc7618]" />
                               </div>
                               <div>
                                 <span className="font-medium block">Express Vendor</span>
-                                <span className="text-muted-foreground text-sm">With motorbike for delivery</span>
+                                <span className="text-[#6b7280] text-sm">With motorbike for delivery</span>
                               </div>
                             </Label>
                           </div>
 
                           <div
-                            className={`relative p-4 border-2 rounded-lg cursor-pointer transition-all ${vendorType === "normal" ? "border-primary bg-primary/5" : "border-muted hover:border-primary/50"}`}
+                            className={`relative p-4 border-2 rounded-lg cursor-pointer transition-all ${vendorType === "normal" ? "border-[#fc7618] bg-[#fc7618]/5" : "border-[#e5e7eb] hover:border-[#fc7618]/50"}`}
                           >
                             <RadioGroupItem value="normal" id="normal" className="sr-only" />
                             <Label htmlFor="normal" className="flex items-center cursor-pointer">
-                              <div className="bg-primary/10 p-2 rounded-full mr-3">
-                                <User className="h-5 w-5 text-primary" />
+                              <div className="bg-[#fc7618]/10 p-2 rounded-full mr-3">
+                                <User className="h-5 w-5 text-[#fc7618]" />
                               </div>
                               <div>
                                 <span className="font-medium block">Normal Vendor</span>
-                                <span className="text-muted-foreground text-sm">In-person/walking delivery</span>
+                                <span className="text-[#6b7280] text-sm">In-person/walking delivery</span>
                               </div>
                             </Label>
                           </div>
@@ -241,24 +241,24 @@ export default function RegisterPage() {
                       </div>
                     )}
 
-                    <div className="bg-muted/30 p-5 rounded-xl">
+                    <div className="bg-[#f8f9fa] p-5 rounded-xl">
                       <div className="flex">
-                        <div className="bg-primary/10 p-2 rounded-full h-fit mr-4">
-                          <Shield className="h-5 w-5 text-primary" />
+                        <div className="bg-[#fc7618]/10 p-2 rounded-full h-fit mr-4">
+                          <Shield className="h-5 w-5 text-[#fc7618]" />
                         </div>
                         <div>
                           <h4 className="font-medium mb-1">What to expect:</h4>
-                          <ul className="text-sm text-muted-foreground space-y-1">
+                          <ul className="text-sm text-[#6b7280] space-y-1">
                             <li className="flex items-center">
-                              <CheckCircle className="h-4 w-4 text-primary mr-2" />
+                              <CheckCircle className="h-4 w-4 text-[#fc7618] mr-2" />
                               Quick approval process (2-3 business days)
                             </li>
                             <li className="flex items-center">
-                              <CheckCircle className="h-4 w-4 text-primary mr-2" />
+                              <CheckCircle className="h-4 w-4 text-[#fc7618] mr-2" />
                               Comprehensive training and support
                             </li>
                             <li className="flex items-center">
-                              <CheckCircle className="h-4 w-4 text-primary mr-2" />
+                              <CheckCircle className="h-4 w-4 text-[#fc7618] mr-2" />
                               Competitive earnings and flexible schedule
                             </li>
                           </ul>
@@ -267,7 +267,7 @@ export default function RegisterPage() {
                     </div>
 
                     <div className="flex justify-end">
-                      <Button onClick={nextStep} className="rounded-full px-8">
+                      <Button onClick={nextStep} className="rounded-full px-8 bg-[#fc7618] hover:bg-[#e06a15] text-white">
                         Continue <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </div>
@@ -278,21 +278,21 @@ export default function RegisterPage() {
                 {currentStep === 2 && (
                   <div className="space-y-8">
                     <div className="text-center">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">Personal Information</h3>
-                      <p className="text-muted-foreground">Tell us about yourself</p>
+                      <h3 className="text-xl font-semibold text-[#20235b] mb-2">Personal Information</h3>
+                      <p className="text-[#6b7280]">Tell us about yourself</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="firstName" className="flex items-center text-sm font-medium">
-                          <User className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <User className="h-4 w-4 mr-2 text-[#6b7280]" />
                           First Name *
                         </Label>
                         <Input id="firstName" name="firstName" required className="rounded-lg h-12" />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName" className="flex items-center text-sm font-medium">
-                          <User className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <User className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Last Name *
                         </Label>
                         <Input id="lastName" name="lastName" required className="rounded-lg h-12" />
@@ -302,14 +302,14 @@ export default function RegisterPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="email" className="flex items-center text-sm font-medium">
-                          <Mail className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <Mail className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Email Address *
                         </Label>
                         <Input id="email" name="email" type="email" required className="rounded-lg h-12" />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone" className="flex items-center text-sm font-medium">
-                          <Phone className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <Phone className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Phone Number *
                         </Label>
                         <Input id="phone" name="phone" type="tel" required className="rounded-lg h-12" />
@@ -318,7 +318,7 @@ export default function RegisterPage() {
 
                     <div className="space-y-2">
                       <Label htmlFor="address" className="flex items-center text-sm font-medium">
-                        <MapPin className="h-4 w-4 mr-2 text-muted-foreground" />
+                        <MapPin className="h-4 w-4 mr-2 text-[#6b7280]" />
                         Full Address *
                       </Label>
                       <Textarea id="address" name="address" rows={3} required className="rounded-lg resize-none" />
@@ -328,7 +328,7 @@ export default function RegisterPage() {
                       <Button onClick={prevStep} variant="outline" className="rounded-full bg-transparent">
                         Back
                       </Button>
-                      <Button onClick={nextStep} className="rounded-full px-8">
+                      <Button onClick={nextStep} className="rounded-full px-8 bg-[#fc7618] hover:bg-[#e06a15] text-white">
                         Continue <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </div>
@@ -339,10 +339,10 @@ export default function RegisterPage() {
                 {currentStep === 3 && (
                   <div className="space-y-8">
                     <div className="text-center">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">
+                      <h3 className="text-xl font-semibold text-[#20235b] mb-2">
                         {registrationType === "vendor" ? "Business Information" : "Professional Details"}
                       </h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#6b7280]">
                         {registrationType === "vendor"
                           ? "Tell us about your business"
                           : "Share your delivery experience"}
@@ -352,7 +352,7 @@ export default function RegisterPage() {
                     {registrationType === "vendor" && (
                       <div className="space-y-2">
                         <Label htmlFor="businessName" className="flex items-center text-sm font-medium">
-                          <Briefcase className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <Briefcase className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Business Name
                         </Label>
                         <Input
@@ -367,7 +367,7 @@ export default function RegisterPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="experience" className="flex items-center text-sm font-medium">
-                          <Calendar className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <Calendar className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Years of Experience *
                         </Label>
                         <Select name="experience" required>
@@ -385,7 +385,7 @@ export default function RegisterPage() {
 
                       <div className="space-y-2">
                         <Label htmlFor="serviceArea" className="flex items-center text-sm font-medium">
-                          <MapPin className="h-4 w-4 mr-2 text-muted-foreground" />
+                          <MapPin className="h-4 w-4 mr-2 text-[#6b7280]" />
                           Service Area *
                         </Label>
                         <Input
@@ -400,7 +400,7 @@ export default function RegisterPage() {
 
                     <div className="space-y-2">
                       <Label htmlFor="vehicleInfo" className="flex items-center text-sm font-medium">
-                        <Car className="h-4 w-4 mr-2 text-muted-foreground" />
+                        <Car className="h-4 w-4 mr-2 text-[#6b7280]" />
                         {registrationType === "vendor" ? "Vehicle Information *" : "Motorbike Information *"}
                       </Label>
                       <Textarea
@@ -419,7 +419,7 @@ export default function RegisterPage() {
 
                     <div className="space-y-2">
                       <Label htmlFor="driverLicense" className="flex items-center text-sm font-medium">
-                        <FileText className="h-4 w-4 mr-2 text-muted-foreground" />
+                        <FileText className="h-4 w-4 mr-2 text-[#6b7280]" />
                         Driver's License Number *
                       </Label>
                       <Input id="driverLicense" name="driverLicense" required className="rounded-lg h-12" />
@@ -429,7 +429,7 @@ export default function RegisterPage() {
                       <Button onClick={prevStep} variant="outline" className="rounded-full bg-transparent">
                         Back
                       </Button>
-                      <Button onClick={nextStep} className="rounded-full px-8">
+                      <Button onClick={nextStep} className="rounded-full px-8 bg-[#fc7618] hover:bg-[#e06a15] text-white">
                         Continue <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </div>
@@ -440,16 +440,16 @@ export default function RegisterPage() {
                 {currentStep === 4 && (
                   <div className="space-y-8">
                     <div className="text-center">
-                      <h3 className="text-xl font-semibold text-foreground mb-2">Review Your Application</h3>
-                      <p className="text-muted-foreground">Please review your information before submitting</p>
+                      <h3 className="text-xl font-semibold text-[#20235b] mb-2">Review Your Application</h3>
+                      <p className="text-[#6b7280]">Please review your information before submitting</p>
                     </div>
 
-                    <div className="bg-muted/30 p-6 rounded-xl">
-                      <h4 className="font-medium mb-4 text-foreground">Application Summary</h4>
+                    <div className="bg-[#f8f9fa] p-6 rounded-xl">
+                      <h4 className="font-medium mb-4 text-[#20235b]">Application Summary</h4>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                         <div>
-                          <p className="text-muted-foreground">Registration Type</p>
+                          <p className="text-[#6b7280]">Registration Type</p>
                           <p className="font-medium">
                             {registrationType === "vendor"
                               ? `Gas Vendor (${vendorType === "express" ? "Express - With Motorbike" : "Normal - Walking/In-person"})`
@@ -457,24 +457,24 @@ export default function RegisterPage() {
                           </p>
                         </div>
                         <div>
-                          <p className="text-muted-foreground">Service Area</p>
+                          <p className="text-[#6b7280]">Service Area</p>
                           <p className="font-medium">Nairobi, Kenya</p>
                         </div>
                         <div>
-                          <p className="text-muted-foreground">Experience Level</p>
+                          <p className="text-[#6b7280]">Experience Level</p>
                           <p className="font-medium">2-5 years</p>
                         </div>
                         <div>
-                          <p className="text-muted-foreground">Vehicle Type</p>
+                          <p className="text-[#6b7280]">Vehicle Type</p>
                           <p className="font-medium">Motorbike - 150cc</p>
                         </div>
                       </div>
                     </div>
 
-                    <div className="space-y-6 p-6 bg-muted/30 rounded-xl border">
-                      <h3 className="text-lg font-semibold text-foreground">Legal Agreements</h3>
+                    <div className="space-y-6 p-6 bg-[#f8f9fa] rounded-xl border">
+                      <h3 className="text-lg font-semibold text-[#20235b]">Legal Agreements</h3>
 
-                      <div className="flex items-start space-x-3 p-4 bg-background rounded-lg">
+                      <div className="flex items-start space-x-3 p-4 bg-white rounded-lg">
                         <Checkbox
                           id="terms"
                           checked={agreedToTerms}
@@ -483,14 +483,14 @@ export default function RegisterPage() {
                         />
                         <Label htmlFor="terms" className="text-sm leading-relaxed cursor-pointer flex-1">
                           I agree to the{" "}
-                          <span className="text-primary hover:underline cursor-pointer font-medium">
+                          <span className="text-[#fc7618] hover:underline cursor-pointer font-medium">
                             Terms and Conditions
                           </span>
                           . I understand the service requirements, payment terms, and operational guidelines.
                         </Label>
                       </div>
 
-                      <div className="flex items-start space-x-3 p-4 bg-background rounded-lg">
+                      <div className="flex items-start space-x-3 p-4 bg-white rounded-lg">
                         <Checkbox
                           id="privacy"
                           checked={agreedToPrivacy}
@@ -499,7 +499,7 @@ export default function RegisterPage() {
                         />
                         <Label htmlFor="privacy" className="text-sm leading-relaxed cursor-pointer flex-1">
                           I agree to the{" "}
-                          <span className="text-primary hover:underline cursor-pointer font-medium">
+                          <span className="text-[#fc7618] hover:underline cursor-pointer font-medium">
                             Privacy Policy
                           </span>
                           . I consent to the collection and processing of my personal data.
@@ -513,7 +513,7 @@ export default function RegisterPage() {
                       </Button>
                       <Button
                         type="submit"
-                        className="rounded-full px-8"
+                        className="rounded-full px-8 bg-[#fc7618] hover:bg-[#e06a15] text-white"
                         disabled={isSubmitting || !agreedToTerms || !agreedToPrivacy}
                       >
                         {isSubmitting ? (
@@ -539,42 +539,42 @@ export default function RegisterPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-[#f8f9fa]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Why Partner With Us?</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-[#20235b] mb-4">Why Partner With Us?</h2>
+            <p className="text-lg text-[#6b7280] max-w-2xl mx-auto">
               Join hundreds of successful partners who are growing their income with LetaGas.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-background rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                <DollarSign className="h-8 w-8 text-primary" />
+            <div className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                <DollarSign className="h-8 w-8 text-[#fc7618]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Competitive Earnings</h3>
-              <p className="text-muted-foreground">
+              <p className="text-[#6b7280]">
                 Earn competitive rates with bonuses for excellent service and customer ratings
               </p>
             </div>
 
-            <div className="text-center p-6 bg-background rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                <Clock className="h-8 w-8 text-primary" />
+            <div className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                <Clock className="h-8 w-8 text-[#fc7618]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Flexible Schedule</h3>
-              <p className="text-muted-foreground">
+              <p className="text-[#6b7280]">
                 Work on your own schedule with the freedom to choose your delivery hours
               </p>
             </div>
 
-            <div className="text-center p-6 bg-background rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                <Shield className="h-8 w-8 text-primary" />
+            <div className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                <Shield className="h-8 w-8 text-[#fc7618]" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Full Support</h3>
-              <p className="text-muted-foreground">
+              <p className="text-[#6b7280]">
                 Complete training, insurance coverage, and 24/7 support for all partners
               </p>
             </div>

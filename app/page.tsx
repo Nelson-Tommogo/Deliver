@@ -18,7 +18,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 text-balance">
-                <span className="text-[#F05E23]">Leta</span>
+                <span className="text-[#fc7618]">Leta</span>
                 Gas Delivery Made <span className="text-primary">Simple</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl text-pretty">
@@ -42,7 +42,7 @@ export default function HomePage() {
                     src="/images/google-play-button.jpg"
                     alt="Get it on Google Play"
                     width={160}
-                    height={60}
+                    height={40}
                     className="rounded-lg shadow-md"
                   />
                 </Link>
@@ -126,8 +126,8 @@ export default function HomePage() {
             {/* Welcome Experience */}
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
-                <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                  <Smartphone className="h-8 w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Smartphone className="h-8 w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg font-semibold text-foreground mb-2">Welcome Experience</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground">
@@ -139,8 +139,8 @@ export default function HomePage() {
             {/* Easy Ordering */}
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
-                <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                  <Truck className="h-8 w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Truck className="h-8 w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg font-semibold text-foreground mb-2">Easy Ordering</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground">
@@ -152,8 +152,8 @@ export default function HomePage() {
             {/* Order Tracking */}
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
-                <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                  <Clock className="h-8 w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Clock className="h-8 w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg font-semibold text-foreground mb-2">Order Tracking</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground">
@@ -165,8 +165,8 @@ export default function HomePage() {
             {/* Quick Setup */}
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
-                <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                  <Users className="h-8 w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Users className="h-8 w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg font-semibold text-foreground mb-2">Quick Setup</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground">
@@ -177,115 +177,61 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* App Screenshots Section */}
-      {/* <section className="py-12 sm:py-16 lg:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
-              Experience Our Mobile App
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Discover the features that make gas delivery simple and convenient
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="text-center">
-              <div className="relative h-48 sm:h-64 lg:h-80 rounded-xl overflow-hidden shadow-lg mb-4">
-                <Image src="/images/welcome-app.jpeg" alt="Welcome Screen" fill className="object-cover" />
-              </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">Welcome Experience</h3>
-              <p className="text-sm text-muted-foreground">Fast, safe, and reliable gas delivery at your fingertips</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 sm:h-64 lg:h-80 rounded-xl overflow-hidden shadow-lg mb-4">
-                <Image src="/images/home-app.jpeg" alt="Home Screen" fill className="object-cover" />
-              </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">Easy Ordering</h3>
-              <p className="text-sm text-muted-foreground">
-                Express and normal delivery options with transparent pricing
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 sm:h-64 lg:h-80 rounded-xl overflow-hidden shadow-lg mb-4">
-                <Image src="/images/order-app.jpeg" alt="Order Details" fill className="object-cover" />
-              </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">Order Tracking</h3>
-              <p className="text-sm text-muted-foreground">Real-time updates and detailed order information</p>
-            </div>
-
-            <div className="text-center">
-              <div className="relative h-48 sm:h-64 lg:h-80 rounded-xl overflow-hidden shadow-lg mb-4">
-                <Image src="/images/onboard-app.jpeg" alt="App Onboarding" fill className="object-cover" />
-              </div>
-              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">Quick Setup</h3>
-              <p className="text-sm text-muted-foreground">Simple onboarding process to get you started quickly</p>
-            </div>
-          </div>
+{/* App Features Section */}
+<section className="py-12 sm:py-16 lg:py-20 bg-muted">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="relative order-2 lg:order-1">
+        <Image
+          src="/images/trackgasorder.jpg"
+          alt="Track your gas delivery in real-time"
+          width={600}
+          height={400}
+          className="rounded-xl sm:rounded-2xl shadow-lg w-full"
+        />
+      </div>
+      <div className="order-1 lg:order-2">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance text-center lg:text-left">
+          Track Your Delivery in Real-Time
+        </h2>
+        <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6 text-pretty text-center lg:text-left">
+          Stay updated with live tracking, estimated delivery times, and direct communication with your delivery
+          vendor through our mobile app.
+        </p>
+        <div className="flex justify-center lg:justify-start gap-4">
+          <Link
+            href="https://i.diawi.com/SyBi6L"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
+          >
+            <Image
+              src="/images/google-play-button.jpg"
+              alt="Get it on Google Play"
+              width={140}
+              height={42}
+              className="rounded-lg shadow-md object-contain"
+            />
+          </Link>
+          <Link
+            href="https://i.diawi.com/SyBi6L"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
+          >
+            <Image
+              src="/images/appstore-button.png"
+              alt="Download on App Store"
+              width={140}
+              height={42}
+              className="rounded-lg shadow-md object-contain"
+            />
+          </Link>
         </div>
-      </section> */}
-
-      {/* App Features Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <Image
-                src="/images/trackgasorder.jpg"
-                alt="Track your gas delivery in real-time"
-                width={600}
-                height={400}
-                className="rounded-xl sm:rounded-2xl shadow-lg w-full"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="bg-primary/10 p-3 rounded-full w-fit mb-4 sm:mb-6 mx-auto lg:mx-0">
-                <Smartphone className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance text-center lg:text-left">
-                Track Your Delivery in Real-Time
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6 text-pretty text-center lg:text-left">
-                Stay updated with live tracking, estimated delivery times, and direct communication with your delivery
-                vendor through our mobile app.
-              </p>
-              <div className="flex justify-center lg:justify-start gap-4">
-                <Link
-                  href="https://i.diawi.com/SyBi6L"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform hover:scale-105"
-                >
-                  <Image
-                    src="/images/google-play-button.jpg"
-                    alt="Get it on Google Play"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-md"
-                  />
-                </Link>
-                <Link
-                  href="https://i.diawi.com/SyBi6L"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform hover:scale-105"
-                >
-                  <Image
-                    src="/images/appstore-button.png"
-                    alt="Download on App Store"
-                    width={140}
-                    height={50}
-                    className="rounded-lg shadow-md"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Premium Products Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-background">
@@ -362,8 +308,8 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" asChild className="bg-[#F05E23] hover:bg-[#E04A1A] text-white">
-              <Link href="#">Shop All Products</Link>
+            <Button size="lg" asChild className="bg-[#fc7618] hover:bg-[#e06a15] text-white">
+              <Link href="/marketplace">Shop All Products</Link>
             </Button>
           </div>
         </div>
@@ -384,8 +330,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <Card className="text-center">
               <CardHeader className="pb-4 sm:pb-6">
-                <div className="bg-primary/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
-                  <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
+                  <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg sm:text-xl">Fast Delivery</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
@@ -396,8 +342,8 @@ export default function HomePage() {
 
             <Card className="text-center">
               <CardHeader className="pb-4 sm:pb-6">
-                <div className="bg-primary/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
-                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
+                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg sm:text-xl">Safe & Secure</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
@@ -408,8 +354,8 @@ export default function HomePage() {
 
             <Card className="text-center md:col-span-2 lg:col-span-1">
               <CardHeader className="pb-4 sm:pb-6">
-                <div className="bg-primary/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
-                  <Truck className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+                <div className="bg-[#fc7618]/10 p-2 sm:p-3 rounded-full w-fit mx-auto mb-3 sm:mb-4">
+                  <Truck className="h-6 w-6 sm:h-8 sm:w-8 text-[#fc7618]" />
                 </div>
                 <CardTitle className="text-lg sm:text-xl">Reliable Service</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
@@ -443,9 +389,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="text-center lg:text-left">
-              <div className="bg-accent/10 p-3 sm:p-4 rounded-full w-fit mb-4 sm:mb-6 mx-auto lg:mx-0">
-                <Users className="h-8 w-8 sm:h-12 sm:w-12 text-accent" />
-              </div>
+              
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 text-balance">
                 Join Our Vendor Network
               </h2>
@@ -454,7 +398,7 @@ export default function HomePage() {
                 gas delivery providers serving customers nationwide.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center lg:justify-start">
-                <Button size="lg" asChild className="w-full sm:w-auto">
+                <Button size="lg" asChild className="w-full sm:w-auto bg-[#fc7618] hover:bg-[#e06a15] text-white">
                   <Link href="/register">Register Now</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="w-full sm:w-auto bg-transparent">
@@ -481,17 +425,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
             <div className="p-4 sm:p-0">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-1 sm:mb-2">500+</div>
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#fc7618] mb-1 sm:mb-2">500+</div>
               <div className="text-base sm:text-lg text-muted-foreground">Trusted Vendors</div>
             </div>
             <div className="p-4 sm:p-0">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-1 sm:mb-2">10K+</div>
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#fc7618] mb-1 sm:mb-2">10K+</div>
               <div className="text-base sm:text-lg text-muted-foreground">Deliveries Completed</div>
             </div>
             <div className="p-4 sm:p-0">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-1 sm:mb-2">4.9</div>
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#fc7618] mb-1 sm:mb-2">4.9</div>
               <div className="text-base sm:text-lg text-muted-foreground flex items-center justify-center gap-1">
-                <Star className="h-4 w-4 sm:h-5 sm:w-5 fill-accent text-accent" />
+                <Star className="h-4 w-4 sm:h-5 sm:w-5 fill-[#fc7618] text-[#fc7618]" />
                 Average Rating
               </div>
             </div>
@@ -564,7 +508,7 @@ export default function HomePage() {
           <div key={`dup-${index}`} className="inline-flex items-center justify-center mx-6 sm:mx-8 lg:mx-12">
             <div className="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-4 flex items-center justify-center">
               <Image
-                src={`/images/logos/${logo}`}
+                src={`/images/${logo}`}
                 alt={`Brand ${index + 1}`}
                 fill
                 className="object-contain p-2"

@@ -254,23 +254,7 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section className="py-16 lg:py-20 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Need More Help?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Contact LetaGas Energies for personalized support and guidance
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="text-[#F05E23] font-semibold">📧 contact@letagas.co.ke</div>
-            <div className="text-[#F05E23] font-semibold">🌐 www.letagas.co.ke</div>
-          </div>
-          <div className="mt-6 text-sm text-muted-foreground">P.O. Box 663 – 00621 Village Market</div>
-        </div>
-      </section>
-
-      <Footer />
+     <Footer />
     </div>
   )
 }

@@ -15,10 +15,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <div className="bg-primary/10 p-4 rounded-full">
-                <Flame className="h-12 w-12 text-primary" />
               </div>
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               About <span className="text-primary">LetaGas</span>
             </h1>
@@ -35,9 +32,6 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="bg-primary/10 p-3 rounded-full w-fit mb-6">
-                <Target className="h-8 w-8 text-primary" />
-              </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 text-balance">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 text-pretty">
                 At LetaGas, we believe that getting gas should be as simple as ordering food. Our mission is to connect

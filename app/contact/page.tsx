@@ -60,7 +60,6 @@ export default function ContactPage() {
               <Card className="border-border bg-card shadow-sm rounded-xl">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <MessageCircle className="h-5 w-5 text-primary" />
                     Contact Information
                   </CardTitle>
                   <CardDescription>Reach out to us through any of these channels.</CardDescription>
@@ -149,7 +148,6 @@ export default function ContactPage() {
               <Card className="border-border bg-card shadow-sm rounded-xl">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl flex items-center gap-2">
-                    <User className="h-5 w-5 text-primary" />
                     Send us a message
                   </CardTitle>
                   <CardDescription>
