@@ -71,7 +71,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
-                      <p className="text-muted-foreground">+254 704 444810</p>
+                      <p className="text-muted-foreground">020 2444100</p>
                       <p className="text-sm text-muted-foreground mt-1">Available 24/7 for emergencies</p>
                     </div>
                   </div>

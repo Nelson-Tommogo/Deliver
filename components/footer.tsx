@@ -147,7 +147,7 @@ export function Footer() {
                   <Phone className="h-4 w-4 text-[#fc7618]" />
                 </div>
                 <div>
-                  <span className="text-gray-300 block">+254 704 444810</span>
+                  <span className="text-gray-300 block">020 2444100</span>
                   <span className="text-gray-400 text-sm">Available 24/7</span>
                 </div>
               </li>
